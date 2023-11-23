@@ -11,11 +11,11 @@ next.addEventListener('click', function () {
 
     if (activeItem < items.length -1) {
 
-        items[activeItem].classList.remove('.active');
+        items[activeItem].classList.remove('active');
 
         activeItem++;
 
-        items[activeItem].classList.add('.active');
+        items[activeItem].classList.add('active');
 
         if (activeItem === items.length -1) {
             next.classList.add('hidden');
