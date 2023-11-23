@@ -9,7 +9,10 @@ const next = document.querySelector('.next');
 
 next.addEventListener('click', function () {
 
-    if (activeItem < items.length -1) {
+    console.log('index: ', activeItem);
+    console.log('lunghezza: ', items.length);
+
+    if (activeItem < items.length) {
 
         items[activeItem].classList.remove('active');
 
@@ -22,3 +25,22 @@ next.addEventListener('click', function () {
         }
     }
 });
+
+const prev = document.querySelector('.prev');
+
+prev.addEventListener('click', function () {
+
+    if (activeItem < items.length) {
+
+        items[activeItem].classList.remove('active');
+
+        activeItem--;
+
+        items[activeItem].classList.add('active');
+
+        if (activeItem === items.length -1) {
+            prev.classList.add('hidden');
+        }
+    }
+
+})
