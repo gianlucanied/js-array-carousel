@@ -1,10 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .slider {
     width: 60%;
     height: 300px;
     background-color: red;
-    margin: 0 20%;
+    margin: 20%;
 }
 
 .item img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item {
+    display: none;
+    overflow: hidden;
+    height: 70vh;
+}
+
+.items-container {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.item.active {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.item.active img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.next {
+    text-align: center;
+    margin-left: 47%;
+
 }
